@@ -17,4 +17,5 @@ test('get started link', async ({ page }) => {
   ).toBeVisible();
   // eslint-disable-next-line no-console
   console.log('Test');
+  var testViolation = "Husky should stop this";
 });
