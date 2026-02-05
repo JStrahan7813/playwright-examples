@@ -18,7 +18,9 @@ test.describe('New Todo', () => {
 
     // Create 1st todo.
     await newTodo.fill(TODO_ITEMS[0]);
-    await newTodo.press('Enter');
+
+    //var localStorage = '';
+    //console.log('Test');
 
     // Make sure the list only has one todo item.
     await expect(page.getByTestId('todo-title')).toHaveText([TODO_ITEMS[0]]);
